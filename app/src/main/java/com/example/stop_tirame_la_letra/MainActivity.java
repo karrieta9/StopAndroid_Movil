@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +26,25 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("EXTRA_MESSAGE", message);
         startActivity(intent);
 
+    }
+
+    public void sesionFacebook(View view) {
+        // Aqui va el codigo para el inicio de sesion por facebook
+        Toast.makeText(this, "Iniciando sesion por Facebook", Toast.LENGTH_SHORT).show();
+    }
+
+    public void sesionGoogle(View view) {
+        // Aqui va el codigo para el inicio de sesion por google
+        Toast.makeText(this, "Iniciando sesion por Google", Toast.LENGTH_SHORT).show();
+    }
+
+    public void recordarPassword(View view) {
+        // Aqui va el codigo para el inicio de sesion por facebook
+        Toast.makeText(this, "Activity recordar contra", Toast.LENGTH_SHORT).show();
+    }
+
+    public void enviarAregistro(View view) {
+        // Aqui va el codigo para el inicio de sesion por google
+        Toast.makeText(this, "Enviando a registro", Toast.LENGTH_SHORT).show();
     }
 }

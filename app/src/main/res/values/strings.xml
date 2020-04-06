@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Stop_Tirame_La_Letra</string>
+    <string name="app_name">Stop TLL</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txtEntrar">Entrar</string>
+    <string name="txtRegistrate1">No tienes Cuenta ?</string>
+    <string name="txtRegistrate2">Registrate Aqui!</string>
+    <string name="txtOlvidoPass1">Has olvidado tu contraseña ?</string>
+    <string name="txtOlvidoPass2">Recuerdala Aqui</string>
+    <string name="txtBtnFacebook">Btn para inicio por facebook</string>
+    <string name="txtBtnGoogle">Btn para inicio por google</string>
+
+    <string name="txtBtnNuevaPartida">Nueva Partida</string>
+    <string name="txtBtnDesafiar">Desafiar</string>
 </resources>

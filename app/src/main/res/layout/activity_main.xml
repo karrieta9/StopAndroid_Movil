@@ -1,129 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:layout_height="match_parent">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="93dp"
+        android:id="@+id/logo"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/cuc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/usuario"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/txtUsuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
         android:id="@+id/password"
         android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/txtPassword"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usuario" />
 
-    <EditText
-        android:id="@+id/usuario"
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Usuario"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
-
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="156dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
         android:onClick="entrarSesion"
-        android:text="Entrar"
+        android:text="@string/txtEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="No tienes cuenta ?"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="88dp"
-        android:text="Registrate aqui!"
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="305dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="16dp"
-        android:text="Has olvidado tu contraseña?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="52dp"
-        android:text="Recuerdala aqui"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:text="@string/txtRegistrate1"
+            android:textSize="15sp" />
 
-    <Button
-        android:id="@+id/btnFacebook"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="F"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnGoogle"
-        app:layout_constraintHorizontal_bias="0.858"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.297" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:clickable="true"
+            android:onClick="enviarAregistro"
+            android:text="@string/txtRegistrate2"
+            android:textSize="15sp" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/btnGoogle"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="148dp"
-        android:text="G"
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        app:layout_constraintVertical_bias="0.238">
 
+        <ImageButton
+            android:id="@+id/btnFacebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:contentDescription="@string/txtBtnFacebook"
+            android:onClick="sesionFacebook"
+            app:srcCompat="@drawable/fb" />
+
+        <ImageButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:contentDescription="@string/txtBtnGoogle"
+            android:onClick="sesionGoogle"
+            app:srcCompat="@drawable/google" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:text="@string/txtOlvidoPass1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="19dp"
+            android:clickable="true"
+            android:onClick="recordarPassword"
+            android:text="@string/txtOlvidoPass2" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
