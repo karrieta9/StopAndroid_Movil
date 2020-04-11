@@ -33,9 +33,11 @@
         android:id="@+id/modelo7"
         android:layout_width="236dp"
         android:layout_height="185dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/modelo"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="109dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
 
     <TextView
         android:id="@+id/textView11"
@@ -49,10 +51,12 @@
         android:id="@+id/textView13"
         android:layout_width="154dp"
         android:layout_height="37dp"
+        android:layout_marginTop="20dp"
         android:text="Usuario123"
         android:textSize="28"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="304dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelo7" />
 
     <TextView
         android:id="@+id/textView12"
@@ -68,8 +72,9 @@
         android:layout_height="30dp"
         android:text="lv. 5"
         android:textSize="22"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="350dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -78,7 +83,8 @@
         android:layout_height="38dp"
         android:progress="75"
         android:progressTint="#4ABA0C"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="388dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
