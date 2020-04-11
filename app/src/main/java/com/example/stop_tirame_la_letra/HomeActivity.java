@@ -13,13 +13,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Intent intent = getIntent();
+        /*Intent intent = getIntent();
         String message = intent.getStringExtra("EXTRA_MESSAGE");
 
         // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.mensaje);
+        TextView textView = findViewById(R.mensaje);
         textView.setText(message);
-
+*/
         /*Bundle bundle = getIntent().getExtras();
         String msg = bundle.getString("EXTRA_MESSAGE");
         TextView textView = findViewById(R.id.mensaje);
