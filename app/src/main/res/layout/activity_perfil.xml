@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/modelo6"
+        android:layout_width="45"
+        android:layout_height="45"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/modelo"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/modelo7"
+        android:layout_width="236dp"
+        android:layout_height="185dp"
+        android:src="@drawable/modelo"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario123"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="154dp"
+        android:layout_height="37dp"
+        android:text="Usuario123"
+        android:textSize="28"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lv. 5"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="lv. 5"
+        android:textSize="22"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="279dp"
+        android:layout_height="38dp"
+        android:progress="75"
+        android:progressTint="#4ABA0C"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
