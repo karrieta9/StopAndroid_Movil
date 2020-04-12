@@ -1,20 +1,37 @@
 <resources>
     <string name="app_name">Stop TLL</string>
+
+    <!-- CAMPOS EDIT TEXT -->
     <string name="txtUsuario">Usuario</string>
     <string name="txtPassword">Contraseña</string>
     <string name="txtEmail">Email</string>
+
+    <!-- TEXTOS -->
+    <string name="txtTerminos">Acepto términos y condiciones</string>
+    <string name="txtRegistrate1">No tienes Cuenta?</string>
+    <string name="txtOlvidoPass1">Has olvidado tu contraseña?</string>
+    <string name="txtUserName">User123</string>
+    <string name="txtLevelUser">Lv. 1</string>
+    <string name="txtLetra">LETRA</string>
+    <string name="txtNombre">NOMBRE</string>
+    <string name="txtApellido">APELLIDO</string>
+    <string name="txtCiudad">CIUDAD</string>
+    <string name="txtAnimal">ANIMAL</string>
+    <string name="txtFruta">FRUTA</string>
+    <string name="txtCosa">COSA</string>
+    <string name="txtTimer">1:00</string>
+
+    <!-- TEXTOS ENLACE -->
+    <string name="txtRegistrate2"><u>Registrate Aqui!</u></string>
+    <string name="txtOlvidoPass2"><u>Recuerdala Aqui</u></string>
+
+    <!-- BOTONES -->
     <string name="txtBtnEntrar">Entrar</string>
     <string name="txtBtnRegistrar">Registrar</string>
     <string name="txtBtnRestablecer">Restablecer</string>
-
-    <string name="txtTerminos">Acepto términos y condiciones</string>
-    <string name="txtRegistrate1">No tienes Cuenta ?</string>
-    <string name="txtRegistrate2"><u>Registrate Aqui!</u></string>
-    <string name="txtOlvidoPass1">Has olvidado tu contraseña ?</string>
-    <string name="txtOlvidoPass2"><u>Recuerdala Aqui</u></string>
     <string name="txtBtnFacebook">Btn para inicio por facebook</string>
     <string name="txtBtnGoogle">Btn para inicio por google</string>
-
     <string name="txtBtnNuevaPartida">Nueva Partida</string>
     <string name="txtBtnDesafiar">Desafiar</string>
+    <string name="txtBtnStop">Stop</string>
 </resources>

@@ -4,15 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/logo"
-        android:layout_width="212dp"
-        android:layout_height="209dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/cuc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -21,74 +25,31 @@
 
     <Button
         android:id="@+id/btnNuevaPartida"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="#49DD1D"
+        android:onClick="crearNuevaPartida"
         android:text="@string/txtBtnNuevaPartida"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <Button
-        android:id="@+id/btnDesafiar"
-        android:layout_width="116dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="48dp"
-        android:background=" #3b5998"
-        android:backgroundTint=" #3b5998"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
-        android:text="@string/txtBtnDesafiar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnNuevaPartida" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/modelo"
-        android:layout_width="45"
-        android:layout_height="45"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="-20dp"
-        android:src="@drawable/modelo"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35000002" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Usuario123"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="169dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="lv. 5"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        tools:layout_editor_absoluteX="192dp" />
-
-
+       <Button
+           android:id="@+id/btnDesafiar"
+           android:layout_width="156dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="60dp"
+           android:background=" #3b5998"
+           android:backgroundTint=" #3b5998"
+           android:drawableStart="@drawable/fb"
+           android:scrollbarAlwaysDrawHorizontalTrack="false"
+           android:text="@string/txtBtnDesafiar"
+           android:textColor="#FFFFFF"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.498"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/btnNuevaPartida" />
 </androidx.constraintlayout.widget.ConstraintLayout>
