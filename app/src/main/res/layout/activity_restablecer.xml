@@ -4,34 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".restablecer">
+    tools:context=".RestablecerActivity">
 
     <Button
         android:id="@+id/restablecer"
-        android:layout_width="wrap_content"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:autoText="false"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#49DD1D"
         android:drawableTint="#0AE91E63"
         android:foregroundTint="#FFFFFF"
-        android:text="Restablecer"
+        android:text="@string/txtBtnRestablecer"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email2" />
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/email2"
-        android:layout_width="262dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="68dp"
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="email"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/txtEmail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user" />
 
@@ -39,7 +40,7 @@
         android:id="@+id/logo3"
         android:layout_width="176dp"
         android:layout_height="176dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/cuc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -48,14 +49,15 @@
 
     <EditText
         android:id="@+id/user"
-        android:layout_width="263dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints="usuario"
         android:ems="10"
-        android:hint="Usuario"
+        android:hint="@string/txtUsuario"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo3" />
 

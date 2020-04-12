@@ -2,11 +2,16 @@
     <string name="app_name">Stop TLL</string>
     <string name="txtUsuario">Usuario</string>
     <string name="txtPassword">Contraseña</string>
-    <string name="txtEntrar">Entrar</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtBtnEntrar">Entrar</string>
+    <string name="txtBtnRegistrar">Registrar</string>
+    <string name="txtBtnRestablecer">Restablecer</string>
+
+    <string name="txtTerminos">Acepto términos y condiciones</string>
     <string name="txtRegistrate1">No tienes Cuenta ?</string>
-    <string name="txtRegistrate2">Registrate Aqui!</string>
+    <string name="txtRegistrate2"><u>Registrate Aqui!</u></string>
     <string name="txtOlvidoPass1">Has olvidado tu contraseña ?</string>
-    <string name="txtOlvidoPass2">Recuerdala Aqui</string>
+    <string name="txtOlvidoPass2"><u>Recuerdala Aqui</u></string>
     <string name="txtBtnFacebook">Btn para inicio por facebook</string>
     <string name="txtBtnGoogle">Btn para inicio por google</string>
 

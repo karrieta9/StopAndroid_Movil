@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void recordarPassword(View view) {
-        // Aqui va el codigo para el inicio de sesion por facebook
-        Toast.makeText(this, "Activity recordar contra", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, RestablecerActivity.class );
+        startActivity(intent);
     }
 
     public void enviarAregistro(View view) {
-        // Aqui va el codigo para el inicio de sesion por google
-        Toast.makeText(this, "Enviando a registro", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, RegisterActivity.class );
+        startActivity(intent);
     }
 }

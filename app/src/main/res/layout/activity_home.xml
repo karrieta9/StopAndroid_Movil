@@ -39,7 +39,6 @@
         android:layout_marginTop="48dp"
         android:background=" #3b5998"
         android:backgroundTint=" #3b5998"
-        android:drawableLeft="@drawable/fb"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:text="@string/txtBtnDesafiar"
         android:textColor="#FFFFFF"
