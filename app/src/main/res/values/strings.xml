@@ -45,4 +45,5 @@
     <string name="txtBtnNuevaPartida">Nueva Partida</string>
     <string name="txtBtnDesafiar">Desafiar</string>
     <string name="txtBtnStop">Stop</string>
+    <string name="txtBtnTerminar">Terminar</string>
 </resources>

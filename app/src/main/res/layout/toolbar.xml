@@ -10,7 +10,7 @@
     app:popupTheme="@style/AppThemeCustomMenuToolbar">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/icon_oponente1"
+        android:id="@+id/toolbar_profile_icon"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:src="@drawable/cuc" />

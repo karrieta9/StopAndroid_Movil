@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -45,27 +46,31 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void desafiarFacebook(View view) {
-        Intent intent = new Intent(this, CalificarActivity.class );
-        startActivity(intent);
+        // Aqui va el codigo para el desafiar sesion por facebook
+        Toast.makeText(this, "Desafiando por Facebook", Toast.LENGTH_SHORT).show();
     }
 
-    private void configurarToolBar (){
+    //METODOS DE TOOLBAR
+
+    public void configurarToolBar (){
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
-    private void  cambiarInfoUserToolBar(){
+    public void  cambiarInfoUserToolBar(){
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayShowTitleEnabled(false);
             TextView tviewnombre = toolbar.findViewById(R.id.toolbar_user);
             TextView tviewnivel = toolbar.findViewById(R.id.toolbar_level);
-            CircleImageView imgfoto = toolbar.findViewById(R.id.icon_oponente1);
+            CircleImageView imgfoto = toolbar.findViewById(R.id.toolbar_profile_icon);
             //Aqui traer nombre de usuario
-            tviewnombre.setText("Yizuz_elpro123");
+            tviewnombre.setText("El_Yizuz123");
             tviewnivel.setText("Level 10");
             imgfoto.setImageResource(R.drawable.modelo);
         }
     }
+
+    //CONFIGURACION DEL MENU
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){

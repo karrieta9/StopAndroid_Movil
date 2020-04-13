@@ -238,7 +238,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:gravity="bottom"
                 android:orientation="horizontal">
 
@@ -405,6 +405,18 @@
                 </RadioGroup>
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="100dp"
+                android:backgroundTint="#49DD1D"
+                android:foregroundTint="#FFFFFF"
+                android:onClick="terminarCalificacion"
+                android:text="@string/txtBtnTerminar"
+                android:textColor="#FFFFFF" />
 
 
         </LinearLayout>
