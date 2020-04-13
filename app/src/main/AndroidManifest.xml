@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PerfilActivity"></activity>
-        <activity android:name=".RestablecerActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".PartidaActivity"></activity>
+        <activity android:name=".CalificarActivity"></activity>
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".RestablecerActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".PartidaActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

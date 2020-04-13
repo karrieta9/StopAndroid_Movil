@@ -20,6 +20,17 @@
     <string name="txtFruta">FRUTA</string>
     <string name="txtCosa">COSA</string>
     <string name="txtTimer">1:00</string>
+    <string name="txtOponente">Oponente 1</string>
+    <string name="txtBien">BIEN</string>
+    <string name="txtMal">MAL</string>
+
+    <string name="txtNombre2">pepe</string>
+    <string name="txtApellido2">gomez</string>
+    <string name="txtCiudad2">barranquilla</string>
+    <string name="txtAnimal2">perro</string>
+    <string name="txtFruta2">pera</string>
+    <string name="txtCosa2">plato</string>
+
 
     <!-- TEXTOS ENLACE -->
     <string name="txtRegistrate2"><u>Registrate Aqui!</u></string>

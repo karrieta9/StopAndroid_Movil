@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -45,6 +44,11 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void desafiarFacebook(View view) {
+        Intent intent = new Intent(this, CalificarActivity.class );
+        startActivity(intent);
+    }
+
     private void configurarToolBar (){
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -55,9 +59,9 @@ public class HomeActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
             TextView tviewnombre = toolbar.findViewById(R.id.toolbar_user);
             TextView tviewnivel = toolbar.findViewById(R.id.toolbar_level);
-            CircleImageView imgfoto = toolbar.findViewById(R.id.toolbar_profile_icon);
+            CircleImageView imgfoto = toolbar.findViewById(R.id.icon_oponente1);
             //Aqui traer nombre de usuario
-            tviewnombre.setText("Yizuz");
+            tviewnombre.setText("Yizuz_elpro123");
             tviewnivel.setText("Level 10");
             imgfoto.setImageResource(R.drawable.modelo);
         }

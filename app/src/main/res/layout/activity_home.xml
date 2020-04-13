@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
 
 
     <include
@@ -26,30 +27,31 @@
     <Button
         android:id="@+id/btnNuevaPartida"
         android:layout_width="159dp"
-        android:layout_height="62dp"
+        android:layout_height="50dp"
         android:layout_marginTop="80dp"
         android:backgroundTint="#49DD1D"
         android:onClick="crearNuevaPartida"
         android:text="@string/txtBtnNuevaPartida"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-       <Button
-           android:id="@+id/btnDesafiar"
-           android:layout_width="156dp"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="60dp"
-           android:background=" #3b5998"
-           android:backgroundTint=" #3b5998"
-           android:drawableStart="@drawable/fb"
-           android:scrollbarAlwaysDrawHorizontalTrack="false"
-           android:text="@string/txtBtnDesafiar"
-           android:textColor="#FFFFFF"
-           app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintHorizontal_bias="0.498"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toBottomOf="@+id/btnNuevaPartida" />
+    <Button
+        android:id="@+id/btnDesafiar"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background=" #3b5998"
+        android:backgroundTint=" #3b5998"
+        android:drawableStart="@drawable/fb"
+        android:onClick="desafiarFacebook"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:text="@string/txtBtnDesafiar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNuevaPartida" />
 </androidx.constraintlayout.widget.ConstraintLayout>

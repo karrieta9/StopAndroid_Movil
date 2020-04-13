@@ -12,7 +12,6 @@
     <style name="AppThemeCustomToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <!-- Customize your theme here. -->
         <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">bold</item>
         <item name="colorControlNormal">@android:color/white</item>
         <item name="actionMenuTextColor">@android:color/white</item>
     </style>
