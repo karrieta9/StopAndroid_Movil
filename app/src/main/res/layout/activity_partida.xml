@@ -224,7 +224,7 @@
                     android:layout_height="wrap_content"
                     android:autofillHints="cosa"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"/>
             </LinearLayout>
 
             <Button
@@ -233,7 +233,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="150dp"
-                android:backgroundTint="#DD1D1D"
+                android:backgroundTint="@color/colorButtons"
                 android:onClick="calificarPartida"
                 android:text="@string/txtBtnStop"
                 android:textColor="#FFFFFF"

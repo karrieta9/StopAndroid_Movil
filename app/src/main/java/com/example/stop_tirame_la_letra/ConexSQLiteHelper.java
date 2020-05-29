@@ -1,12 +1,15 @@
 package com.example.stop_tirame_la_letra;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
 import com.example.stop_tirame_la_letra.utilidades.Utilidades;
+
+import java.sql.SQLException;
 
 public class ConexSQLiteHelper extends SQLiteOpenHelper {
 

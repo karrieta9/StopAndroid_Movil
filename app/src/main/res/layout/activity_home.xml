@@ -18,18 +18,20 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/cuc"
+        android:src="@drawable/logo_stop"
+        app:civ_border_color="#000"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />/>
 
     <Button
         android:id="@+id/btnNuevaPartida"
         android:layout_width="159dp"
         android:layout_height="50dp"
         android:layout_marginTop="80dp"
-        android:backgroundTint="#49DD1D"
+        android:backgroundTint="@color/colorButtons"
         android:onClick="crearNuevaPartida"
         android:text="@string/txtBtnNuevaPartida"
         android:textColor="#FFFFFF"

@@ -13,7 +13,7 @@
         android:id="@+id/toolbar_profile_icon"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:src="@drawable/cuc" />
+        android:src="@drawable/logo_stop" />
 
     <LinearLayout
         android:layout_width="130dp"

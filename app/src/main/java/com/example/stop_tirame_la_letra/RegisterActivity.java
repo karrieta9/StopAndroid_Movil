@@ -28,10 +28,6 @@ public class RegisterActivity extends AppCompatActivity {
         pass_usuario = (EditText) findViewById(R.id.Password);
         email_usuario = (EditText) findViewById(R.id.Email);
         terminos = (CheckBox) findViewById(R.id.terminos);
-
-        //text_nombre = nombre_usuario.getText().toString();
-        //text_usuario = pass_usuario.getText().toString();
-        //text_email = email_usuario.getText().toString();
     }
 
     public void registrarUsuario(View view) {
@@ -50,9 +46,12 @@ public class RegisterActivity extends AppCompatActivity {
             values.put(Utilidades.campo_fecha, "15/28/289");
 
             Long res = db.insert(Utilidades.tabla, Utilidades.campo_nombre, values);
-            Toast.makeText(getApplicationContext(), "id: " + res, Toast.LENGTH_SHORT).show();
             db.close();
 
+            Toast.makeText(this, "Usuario registrado con exito.", Toast.LENGTH_SHORT).show();
+            nombre_usuario.setText("");
+            pass_usuario.setText("");
+            email_usuario.setText("");
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }

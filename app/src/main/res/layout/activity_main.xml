@@ -12,11 +12,13 @@
         android:layout_width="176dp"
         android:layout_height="176dp"
         android:layout_marginTop="30dp"
-        android:src="@drawable/cuc"
+        android:src="@drawable/logo_stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"/>/>
 
     <EditText
         android:id="@+id/usuario"
@@ -41,6 +43,7 @@
         android:ems="10"
         android:hint="@string/txtPassword"
         android:inputType="textPassword"
+        android:textIsSelectable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +54,7 @@
         android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#49DD1D"
+        android:backgroundTint="@color/colorButtons"
         android:foregroundTint="#FFFFFF"
         android:onClick="entrarSesion"
         android:text="@string/txtBtnEntrar"
