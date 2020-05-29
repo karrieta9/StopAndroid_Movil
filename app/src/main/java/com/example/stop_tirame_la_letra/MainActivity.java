@@ -1,3 +1,5 @@
+/* Aplicacion: Stop Tirame La Letra
+   Estudiantes: Keiner Arrieta, Yeferson Escobar, Jesus Saravia */
 package com.example.stop_tirame_la_letra;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ConexSQLiteHelper conex = new ConexSQLiteHelper(this, "stop_db", null, 1);
     }
 
     public void entrarSesion(View view) {

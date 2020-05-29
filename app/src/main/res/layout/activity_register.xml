@@ -66,6 +66,7 @@
         android:backgroundTint="#49DD1D"
         android:drawableTint="#0AE91E63"
         android:foregroundTint="#FFFFFF"
+        android:onClick="registrarUsuario"
         android:text="@string/txtBtnRegistrar"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
