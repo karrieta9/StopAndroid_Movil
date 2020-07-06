@@ -1,2 +1,2 @@
-prubas
-otra prueba del archivo prueba
+Pruebas
+Otra prueba del archivo prueba
